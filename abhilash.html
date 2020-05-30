@@ -1,0 +1,125 @@
+<html>
+<head>
+<style>
+body{
+  background-image:url("proj1.jpeg");
+  background-size:cover;
+  font-size:25px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color:white;
+}
+ .boxing{
+              width:1020px;
+              height: 950px;
+              padding:16px;
+              position:relative;
+              box-shadow: 0 5px 15px rgba(0,0,0,.5);  
+          
+              
+ }
+ .dropbtn{
+
+
+background-color:blue;
+color: white;
+padding: 16px;
+font-size: 26px;
+border: none;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+width:200px;
+
+
+
+}
+
+.topbottom {
+  position: absolute;
+  bottom: -10px;
+  right: 16px;
+  font-size: 75px;
+  background-color:blue;
+}
+
+table{
+                background-color: rgb(105, 255, 45);
+                border-block-end-color: deeppink;
+            }
+</style>
+<script src="source.js"> 
+
+    </script>
+ </head>
+<body>
+ 
+  <br>
+  <br> 
+  <br>
+  
+<center> 
+<form name="f1">
+ <div class="boxing">
+   <br>
+   <br>
+   
+ &nbsp &nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp &nbsp &nbspQUESTION TYPE:&nbsp<select id="a1"style="width:380px;height:30px;background-color:white;font-family:verdana;font-size:20px" autofocus required>
+
+<option value="1">MCQ</option>
+<option value="2">FILLUP</option>
+<option value="3">PROGRAMMING</option>
+<option value="4"> MATCH THE FOLLOWING </option>
+</select>
+<br>
+<br>
+<br>
+&nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbspMANUAL DIFFICULTY:<select id="a2"style="width:380px;height:30px;background-color:white;font-family:verdana;font-size:20px" autofocus required> 
+
+    <option value="1">EASY</option>
+    <option value="2">MEDIUM</option>
+    <option value="3">HARD</option>
+           
+    </select>
+<br>
+<br>
+<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbspTOTAL NO OF STUDENTS:<input type="number" id="n"style="width:380px;height:30px;background-color:white;font-family:verdana;font-size:20px" onblur="perform()"autofocus required>
+<!--   
+<button type="button" onclick="perform()">Click</button>
+-->
+        <table id="ta1" border="1"></table>   
+        <br>
+        <br>
+        
+
+
+
+&nbsp &nbspNO STUDENTS GOT IT RIGHT:<input type="number"  id="a5"style="width:380px;height:30px;background-color:white;font-family:verdana;font-size:20px" autofocus required>
+<br>
+<br>
+<br>
+NO STUDENTS GOT IT WRONG:<input type="number"  id="a6"style="width:380px;height:30px;background-color:white;font-family:verdana;font-size:20px" autofocus required>
+<br>
+<br>
+<br>
+NO STUDENTS GOT IT PARTIAL:<input type="number"  id="a7"style="width:380px;height:30px;background-color:white;font-family:verdana;font-size:20px" autofocus required>
+<br>
+<br>
+<br>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspMAXIMUM MARKS:<input type="number" id="a8"style="width:380px;height:30px;background-color:white;font-family:verdana;font-size:20px"autofocus required>
+<br> 
+<br>
+<br>
+<br>
+<br>
+<button class="dropbtn" type="button" onclick="work()">submit</button>
+</form>
+<br>
+<br>
+<br>
+<p id="demo" class="topbottom"></p>
+</div>
+
+
+</center>
+</body>
+</html>  
